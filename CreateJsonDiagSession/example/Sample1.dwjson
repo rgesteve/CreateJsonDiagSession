@@ -1,0 +1,224 @@
+{
+  "totalTimeRange": {
+    "begin": {
+      "h": 0,
+      "l": 0
+    },
+    "duration": {
+      "h": 0,
+      "l": 10000
+    }
+  },
+  "name": "machine-name",
+  "processor": {
+    "logicalCount": 4,
+    "speedInMHz": 2670,
+    "pointerSizeInBytes": 4,
+    "highestUserAddress": {
+      "h": 1,
+      "l": 2147418111
+    }
+  },
+  "processes": [
+    {
+      "name": "targetProcess.exe",
+      "id": 1234,
+      "begin": {
+        "h": 0,
+        "l": 1000
+      },
+      "end": {
+        "h": 0,
+        "l": 8000
+      },
+      "isTarget": true,
+      "isUser": true,
+      "moduleIDs": [
+        1,
+        2
+      ],
+      "threads": [
+        {
+          "id": 1,
+          "begin": {
+            "h": 0,
+            "l": 2000
+          },
+          "end": {
+            "h": 0,
+            "l": 3000
+          },
+          "stacks": [
+            {
+              "timestamp": {
+                "h": 0,
+                "l": 2500
+              },
+              "frameIPs": [
+                {
+                  "h": 0,
+                  "l": 10
+                },
+                {
+                  "h": 0,
+                  "l": 150
+                },
+                {
+                  "h": 0,
+                  "l": 250
+                },
+                {
+                  "h": 0,
+                  "l": 40
+                },
+                {
+                  "h": 0,
+                  "l": 270
+                },
+                {
+                  "h": 0,
+                  "l": 170
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "begin": {
+            "h": 0,
+            "l": 4000
+          },
+          "end": {
+            "h": 0,
+            "l": 5000
+          },
+          "stacks": [
+            {
+              "timestamp": {
+                "h": 0,
+                "l": 4500
+              },
+              "frameIPs": [
+                {
+                  "h": 0,
+                  "l": 20
+                },
+                {
+                  "h": 0,
+                  "l": 160
+                },
+                {
+                  "h": 0,
+                  "l": 260
+                },
+                {
+                  "h": 0,
+                  "l": 45
+                },
+                {
+                  "h": 0,
+                  "l": 280
+                },
+                {
+                  "h": 0,
+                  "l": 180
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "name": "targetProcess.exe",
+      "id": 1,
+      "begin": {
+        "h": 0,
+        "l": 1000
+      },
+      "end": {
+        "h": 1,
+        "l": 8000
+      },
+      "base": {
+        "h": 0,
+        "l": 5
+      },
+      "size": {
+        "h": 0,
+        "l": 50
+      },
+      "ranges": [
+        {
+          "name": "foo",
+          "base": {
+            "h": 0,
+            "l": 0
+          },
+          "size": {
+            "h": 0,
+            "l": 24
+          }
+        },
+        {
+          "name": "bar",
+          "base": {
+            "h": 0,
+            "l": 25
+          },
+          "size": {
+            "h": 0,
+            "l": 44
+          }
+        }
+      ]
+    },
+    {
+      "name": "external.dll",
+      "id": 2,
+      "begin": {
+        "h": 0,
+        "l": 2000
+      },
+      "end": {
+        "h": 0,
+        "l": 7000
+      },
+      "base": {
+        "h": 0,
+        "l": 100
+      },
+      "size": {
+        "h": 0,
+        "l": 1000
+      },
+      "ranges": [
+        {
+          "name": "exFoo",
+          "base": {
+            "h": 0,
+            "l": 0
+          },
+          "size": {
+            "h": 0,
+            "l": 99
+          }
+        },
+        {
+          "name": "exBar",
+          "base": {
+            "h": 0,
+            "l": 100
+          },
+          "size": {
+            "h": 0,
+            "l": 199
+          }
+        }
+      ]
+    }
+  ]
+}
